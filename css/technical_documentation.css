@@ -1,0 +1,41 @@
+body{
+    background-color:
+    #EAF6F6;
+    
+    }
+    
+    
+    
+    header{
+      font-size:3rem;
+      background-color: #66BFBF;
+    }
+    
+    #navbar{
+        position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 22vw;
+      border-right: 5px solid black;
+      font-family: Helvetica;
+      overflow: hidden;
+    line-height:2.5rem;
+    }
+    #main-doc{
+    
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 25vw;
+      font-family: Helvetica;
+      font-size: 20px;
+    }
+    
+    @media(min-width:10px) and(max-width:679px){
+      #navbar{
+        height:100%;
+        width:34vw;
+      }
+    }
+    

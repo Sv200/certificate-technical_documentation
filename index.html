@@ -1,0 +1,165 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Documentation</title>
+<link rel="stylesheet" href="css/technical_documentation.css">
+</head>
+<body>
+
+<nav  id="navbar">
+<header> Javascript Documentation</header>
+
+<ul>
+  <li><a href="#Introduction" class="nav-link"> Introduction<a/></li>
+  <br>
+   <li><a href="#Tutorials" class="nav-link"> Tutorials <a/> </li>
+   <br>
+   <li><a href="#Javascript_guide" class="nav-link">Javascript guide<a/></li><br>
+   <li><a href="#Advance" class="nav-link"> Advance<a/></li><br>
+   <li><a href="#Javascript_reference" class="nav-link"> Javascript reference<a/></li><br>
+   <li><a href="#Built_ins" class="nav-link"> Built ins<a/></li>
+
+  </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+   <header>Introduction</header>
+   <p>
+ JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as , Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.<br>
+
+<p>This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments. For information about APIs that are specific to Web pages, please see Web APIs and DOM.</p>
+
+<p>JavaScript documentation of core language features (pure ECMAScript, for the most part) includes the following:</p>
+<ul>
+<li>The JavaScript guide</li>
+<li>The JavaScript reference</li>
+
+</ul>
+</p>
+</section>
+
+<section class="main-section" id="Tutorials">
+<header>Tutorials</header>
+<p>
+
+<p>Head over to our Learning Area JavaScript topic if you want to learn JavaScript but have no previous experience with JavaScript or programming. The complete modules available there are as follows:</p>
+ <ol>
+   <li>JavaScript first steps</li>
+<p>Answers some fundamental questions such as "what is JavaScript?", "what does it look like?", and "what can it do?", along with discussing key JavaScript features such as variables, strings, numbers, and arrays.</p>
+<li>JavaScript building blocks</li>
+<p>Continues our coverage of JavaScript's key fundamental features, turning our attention to commonly-encountered types of code blocks such as conditional statements, loops, functions, and events.</p>
+<li>Introducing JavaScript objects</li>
+<p>The object-oriented nature of JavaScript is important to understand if you want to go further with your knowledge of the language and write more efficient code, therefore we've provided this module to help you.</p>
+<li>Asynchronous JavaScript</li>
+<p>Discusses asynchronous JavaScript, why it is important, and how it can be used to effectively handle potential blocking operations such as fetching resources from a server.</p>
+
+</ol>
+</p>
+</section>
+<section class="main-section" id="Javascript_guide">
+ <header>Javascript guide</header>
+<p>
+  <p>A much more detailed guide to the JavaScript language, aimed at those with previous programming experience either in JavaScript or another language.</p>
+
+<ol>
+<li>Grammar and types</li>
+<p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.
+<br>
+JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.
+
+</p>
+<ul style="list-style-type:square">
+  <li>Basic syntax & comments</li>
+  <li>Declarations</li>
+  <li>Variable scope</li>
+  <li>Variable hoisting</li>
+  <li>Data structures and types</li>
+</ul>
+<br>
+
+<li>Control flow and error handling</li>
+<p>JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application. This chapter provides an overview of these statements.</p>
+<ul style="list-style-type:square">
+  <li>if...else</li>
+  <br>
+  <code>if (condition) {<br>
+  // Statements for when condition is true
+  // …
+} <br> else {
+  // Statements for when condition is false
+  // …
+<br>} </code>
+
+<li>switch</li>
+<code>switch (expression) {
+  case label1:
+    statements1;
+    break;</code>
+ <code> case label2:
+    statements2;
+    break;</code>
+<code>  // …
+  default:
+    statementsDefault;<br>
+}</code>
+<li>try/catch/throw</li>
+<code>
+  throw "Error2"; // String type
+throw 42; // Number type
+throw true; // Boolean type
+throw {
+  toString() {
+    return "I'm an object!";
+  },
+};
+  </code>
+</ul>
+
+</ol>
+</p>
+</section>
+<section class="main-section" id="Advance">
+<header>Advance</header>
+<p>
+  <ul>
+<li>Inheritance and the prototype chain</li>
+
+  <p>Explanation of the widely misunderstood and underestimated prototype-based inheritance.</p>
+<li>Memory Management</li>
+  <p>Memory life cycle and garbage collection in JavaScript.</p>
+  <li>The event loop</li>
+ <p>JavaScript has a runtime model based on an "event loop".</p>
+  </ul>
+  </p>
+</section>
+<section class="main-section" id="Javascript_reference">
+<header>Javascript reference</header>
+<p>
+  <p>The JavaScript reference serves as a repository of facts about the JavaScript language. The entire language is described here in detail. As you write JavaScript code, you'll refer to these pages often (thus the title "JavaScript reference").</p>
+
+  <p>The JavaScript language is intended to be used within some larger environment, be it a browser, server-side scripts, or similar. For the most part, this reference attempts to be environment-agnostic and does not target a web browser environment.</p>
+  <p>If you are new to JavaScript, start with the guide. Once you have a firm grasp of the fundamentals, you can use the reference to get more details on individual objects and language constructs.</p>
+  </p>
+  </section>
+  <section class="main-section" id="Built_ins" >
+   <header>Built ins</header>
+   <p>
+  <p>This chapter documents all of JavaScript's standard, built-in objects, including their methods and properties.</p>
+  <p>The term "global objects" (or standard built-in objects) here is not to be confused with the global object. Here, "global objects" refer to objects in the global scope.</p>
+  <ul>
+<li>Object</li>
+<li>Function</li>
+<li>Boolean</li>
+<li>Symbol</li>
+<li>Number</li>
+<li>Math</li>
+<li>Date</li>
+ <p>And many more..........</p>
+  </ul>
+  </p>
+  </section>
+  </main>
+ </body>
+  </html>
